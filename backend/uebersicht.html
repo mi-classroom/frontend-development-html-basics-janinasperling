@@ -10,49 +10,50 @@
 <body>
     <h1>Martyrium des hl. Erasmus</h1>
 
-    <form action="">
+    <form action="data/store.php">
+
         <fieldset>
             <legend>Abbildung von Gemälde</legend>
-            <figure><img src="" alt=""></figure>
+            <figure><img src="/img/bildnis-der-anna-cuspinian.jpg" alt="bildnis der anna cuspinian"></figure>
         </fieldset>
-        <input type="file" name="image">
+        <input type="file" name="bild">
 
         <fieldset>
             <legend>Allgemeine Daten</legend>
-            <label for="">Datierung</label>
-            <input type="number" name="datierung">
+            <label for="datierung">Datierung</label>
+            <input type="number" name="datierung" id="datierung">
 
-            <label for="">Eigentümer</label>
-            <input type="text" name="eigentuemer">
+            <label for="eigentuemer">Eigentümer</label>
+            <input type="text" name="eigentuemer" id="eigentuemer">
 
-            <label for="">Besitzer</label>
-            <input type="text" name="besitzer">
+            <label for="besitzer">Besitzer</label>
+            <input type="text" name="besitzer" id="besitzer">
 
-            <label for="">Standort</label>
-            <input type="text" name="standort">
+            <label for="standort">Standort</label>
+            <input type="text" name="standort" id="standort">
         </fieldset>
 
         <fieldset>
             <legend>Weitere Informationen</legend>
             <label for="masse">Maße</label>
-            <textarea name="masse" id="" cols="30" rows="10"></textarea>
+            <textarea name="masse" id="masse" cols="30" rows="10"></textarea>
 
             <label for="kurzbeschreibung">Kurzbeschreibung</label>
-            <textarea name="kurzbeschreibung" id="" cols="30" rows="10"></textarea>
+            <textarea name="kurzbeschreibung" id="kurzbeschreibung" cols="30" rows="10"></textarea>
         </fieldset>
 
         <fieldset>
             <legend>Status</legend>
             <label for="sichtbar">sichtbar</label>
-            <input type="radio" name="status">
+            <input type="radio" name="status" id="sichtbar">
 
-            <label for="nicht sichtbar">nicht sichtbar</label>
-            <input type="radio" name="status">
+            <label for="nichtsichtbar">nicht sichtbar</label>
+            <input type="radio" name="status" id="nichtsichtbar">
         </fieldset>
 
         <fieldset>
             <legend>Zuordnung Tour</legend>
-            <select name="zuordnungTour" id="">
+            <select name="zuordnungTour" id="zuordnungTour">
                 <option value="tour1">Staatsgalerie im Schloss Johannisburg</option>
                 <option value="tour2">Staatsgalerie im Schloss Marienheide</option>
                 <option value="tour3">Staatsgalerie im Schloss Köln</option>
